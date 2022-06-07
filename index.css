@@ -63,3 +63,28 @@ body {
 .nav-dot:hover span {
   opacity: 1;
 }
+
+/*My work*/
+.desc {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.desc > a > img {
+  transition: transform 0.3s ease-in-out; /* Animation */
+}
+
+.descText {
+  position: absolute;
+  display: none;
+}
+
+.desc:hover > a > img {
+  transform: scale(1.05);
+  filter: opacity(20%);
+}
+
+.desc:hover .descText {
+  display: block;
+}

@@ -524,6 +524,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 4rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .mt-36 {
   margin-top: 9rem;
 }
@@ -558,10 +562,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-8 {
   margin-bottom: 2rem;
-}
-
-.mt-16 {
-  margin-top: 4rem;
 }
 
 .mt-24 {
@@ -608,10 +608,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 14rem;
 }
 
-.h-8 {
-  height: 2rem;
-}
-
 .w-full {
   width: 100%;
 }
@@ -622,10 +618,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-3\/4 {
   width: 75%;
-}
-
-.w-8 {
-  width: 2rem;
 }
 
 .max-w-xl {
@@ -751,11 +743,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-nav {
   --tw-bg-opacity: 1;
   background-color: rgb(64 64 83 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-input {
@@ -962,13 +949,36 @@ body {
   opacity: 1;
 }
 
+/*My work*/
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.desc > a > img {
+  transition: transform 0.3s ease-in-out;
+  /* Animation */
+}
+
+.descText {
+  position: absolute;
+  display: none;
+}
+
+.desc:hover > a > img {
+  transform: scale(1.05);
+  filter: opacity(20%);
+}
+
+.desc:hover .descText {
+  display: block;
+}
+
 @media (min-width: 768px) {
   .md\:absolute {
     position: absolute;
-  }
-
-  .md\:col-span-2 {
-    grid-column: span 2 / span 2;
   }
 
   .md\:my-36 {
@@ -978,10 +988,6 @@ body {
 
   .md\:mt-0 {
     margin-top: 0px;
-  }
-
-  .md\:block {
-    display: block;
   }
 
   .md\:flex {
@@ -1020,10 +1026,6 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .lg\:col-span-1 {
-    grid-column: span 1 / span 1;
-  }
-
   .lg\:mr-24 {
     margin-right: 6rem;
   }
@@ -1044,20 +1046,12 @@ body {
     height: 18rem;
   }
 
-  .lg\:h-12 {
-    height: 3rem;
-  }
-
   .lg\:w-4 {
     width: 1rem;
   }
 
   .lg\:w-auto {
     width: auto;
-  }
-
-  .lg\:w-12 {
-    width: 3rem;
   }
 
   .lg\:grid-cols-3 {
