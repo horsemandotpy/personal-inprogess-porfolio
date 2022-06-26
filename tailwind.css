@@ -949,6 +949,15 @@ body {
   opacity: 1;
 }
 
+.bg-theme-hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(150, 100, 30);
+}
+
+button:hover {
+  background-color: hsl(150, 100, 30);
+}
+
 /*My work*/
 
 .desc {
@@ -974,6 +983,21 @@ body {
 
 .desc:hover .descText {
   display: block;
+}
+
+.hover\:bg-green-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 128 61 / var(--tw-bg-opacity));
+}
+
+.hover\:text-green-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity));
+}
+
+.hover\:text-green-400:hover {
+  --tw-text-opacity: 1;
+  color: rgb(74 222 128 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
